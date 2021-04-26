@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Crud Codeigniter</title>
+    <title>My Books</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="<?=base_url()?>assets/css/bootstrap.min.css">
@@ -14,7 +14,7 @@
   <body>
 
     <div class="container" style="text-align: center;">
-      <h1>Crud image Codeigniter</h1>
+      <h1>My Books</h1>
       <hr>
      
     </div>

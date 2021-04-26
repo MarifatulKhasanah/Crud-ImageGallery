@@ -43,7 +43,7 @@
             </a>
             <div class="caption">
               <h3><?php echo $data->name?></h3>
-              <p> <?php echo $data->alamat ?></p>
+              <p> <?php echo $data->deskripsi ?></p>
               <p>
                 <a href="<?=base_url()?>index.php/home/edit/<?=$data->id?>" class="btn btn-warning" role="button">Edit</a>
                 <a href="<?=base_url()?>index.php/home/deletedata/<?=$data->id?>/<?=$data->foto?>" class="btn btn-danger" role="button">Hapus</a>

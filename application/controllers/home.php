@@ -79,7 +79,7 @@ class Home extends CI_Controller {
   public function insertdata()
   {
       $name   = $this->input->post('name');
-      $alamat = $this->input->post('alamat');
+      $deskripsi = $this->input->post('deskripsi');
 
       // get foto
       $config['upload_path'] = './assets/picture';
@@ -97,7 +97,7 @@ class Home extends CI_Controller {
 	            $data = array(
 	                          'name'       => $name,
                             'foto'       => $foto['file_name'],
-	                          'alamat'     => $alamat,
+	                          'deskripsi'     => $deskripsi,
 	                        );
 							$this->modelcrud->insert($data);
               redirect('');
@@ -137,7 +137,7 @@ class Home extends CI_Controller {
   {
       $id   = $this->input->post('id');
       $name = $this->input->post('name');
-      $alamat = $this->input->post('alamat');
+      $deskripsi = $this->input->post('deskripsi');
 
       $path = './assets/picture/';
 
@@ -159,7 +159,7 @@ class Home extends CI_Controller {
 	            $data = array(
 	                          'name'       => $name,
                             'foto'       => $foto['file_name'],
-	                          'alamat'     => $alamat,
+	                          'deskripsi'     => $deskripsi,
 	                        );
               // hapus foto pada direktori
               @unlink($path.$this->input->post('filelama'));
